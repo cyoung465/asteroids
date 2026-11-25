@@ -12,7 +12,7 @@ class Asteroid(CircleShape):
         super().__init__(x, y, radius)
 
     def draw(self, screen: pygame.Surface):
-        pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
+        pygame.draw.circle(screen, "pink", self.position, self.radius, LINE_WIDTH)
 
     def split(self):
         self.kill()
